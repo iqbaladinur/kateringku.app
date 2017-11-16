@@ -1,4 +1,4 @@
-<h3>Installation<h3>
+<h3>Installation</h3>
 <ol>
 	<li>
 		Download or clone this project.
