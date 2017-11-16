@@ -17,6 +17,4 @@
 	</li>
 <ol>
 <br>
-<p>
-	if you have question or want the full version contact on WA (+6281226241893) or email to: iqbaladinur@gmail.com
-</p>
+#if you have question or want the full version contact on WA (+6281226241893) or email to: iqbaladinur@gmail.com
