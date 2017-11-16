@@ -48,7 +48,7 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1';
+$db['default']['hostname'] = '127.0.0.1:54324';
 $db['default']['username'] = 'azure';
 $db['default']['password'] = '6#vWHD_$';
 $db['default']['database'] = 'kateringdb';
