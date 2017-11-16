@@ -1,18 +1,21 @@
 <h3>Installation<h3>
 <ol>
 	<li>
-		download or clone this project.
+		Download or clone this project.
 	</li>
 	<li>
-		placed on your workspace (htdoc for local server).
+		Placed on your workspace.
 	</li>
 	<li>
-		install/import file "kateringdb.sql" to your database using mysql dbms.
+		Install/import file "kateringdb.sql" to your database using mysql dbms.
 	</li>
 	<li>
-		change "$config['base_url']" on file direktory:kateringku.app/application/config/config.php with your environtment. ex: "http://localhost/kateringku.app".
+		Change "$config['base_url']" on file direktory:kateringku.app/application/config/config.php with your environtment. ex: "http://localhost/kateringku.app".
 	</li>
 	<li>
-		change the database config (directory:kateringku.app/application/config/database.php), fit with your mysql dbms environtment.
+		Change the database config (directory:kateringku.app/application/config/database.php), fit with your mysql dbms environtment.
 	</li>
 <ol>
+<p>
+	if you have question or want the full version contact on WA (+6281226241893) or email to: iqbaladinur@gmail.com
+</p>
