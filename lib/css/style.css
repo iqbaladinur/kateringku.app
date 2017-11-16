@@ -1,0 +1,116 @@
+body { 
+	padding-top: 50px; 
+}
+.theme-color{
+	background-color: #fff;
+	color: #000;
+}
+.admin-theme-color{
+	background-color: #2196F3;
+	color: #000;
+}
+#nav-menu{
+	text-decoration: none;
+	color: gray;
+}
+#nav-menu:hover{
+	background-color: #fff;
+	color: #B2EBF2;
+}
+#nav-menu:focus{
+	background-color: #fff;
+	color: #B2EBF2;
+}
+.menu-toggle{
+	background-color: #80DEEA;
+	color: white;
+}
+nav{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+#myCarousel{
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.bar-menu{
+	display: inline-block;
+    padding: 5px 0;
+    width: 100%!important;
+    position: relative!important;
+    margin-bottom: 0;
+}
+.btn-style{
+	margin-top: 20px;
+	border-radius: 0px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	border: none;
+}
+.footer{
+	padding: 20px;
+	background-color: #ECEFF1;
+	font-size: 12px;
+	color: gray;
+}
+#loadmore:disabled{
+	background-color: #fff;
+	color: gray;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.label{
+	padding-left: .6em;
+	padding-right: .6em;
+	border-radius: 10rem;
+}
+.middle{
+	vertical-align: middle;
+}
+.label-left{
+	padding-top: 7px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.bordered{
+	border: 1px solid rgb(183, 183, 183);
+	border-radius: 2px;
+}
+.menu-pad {
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px;
+}
+.admin-profile{
+	height:200px;
+	padding-top:70px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	color: #fff;
+	background-color: rgb(24, 143, 233);
+}
+i.badge.notifikasi{
+	position: relative;
+	top:100px;
+}
+.notif-line{
+	background-color: red;
+	text-indent: 0px;
+}
+span#headofadmin{
+	position: relative;
+    top: 2;
+}
+#login-admin{
+	position: relative;
+	top: 150px;
+}
+
+.floating-btn{
+	position:fixed;
+	right:10px;
+	bottom:0;
+}
+
+.login-bg{
+	background-image: url(../../asset/img/login-bg.jpg);
+	background-size: cover;
+}
