@@ -114,3 +114,7 @@ span#headofadmin{
 	background-image: url(../../asset/img/login-bg.jpg);
 	background-size: cover;
 }
+
+.img-responsive{
+	object-fit: cover;
+}
