@@ -30,7 +30,7 @@ class User extends CI_Controller {
 	}
 	public function menu(){
 		//load data menu
-		$data['menu']=$this->data->get_menu(10,0);
+		$data['menu']=$this->data->get_menu(12,0);
 		//first paging
 		$data['count']=10;
 		$this->load->view('user_vw/meta');
