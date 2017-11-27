@@ -297,9 +297,9 @@ class Admin extends CI_Controller {
 		$this->load->view('admin_vw/jscon_admin');
 	}
 	public function tambah_menu(){
-		$nama_menu =$this->input->post('nama_menu');
-		$keterangan=$this->input->post('ket_menu');
-		$harga_menu=$this->input->post('harga_menu');
+		$nama_menu =$this->input->post('nama_menu', true);
+		$keterangan=$this->input->post('ket_menu', true);
+		$harga_menu=$this->input->post('harga_menu', true);
 		if (empty($harga_menu) or empty($harga_menu) or empty($keterangan)) {
 			header("Location:".base_url('admin/kelola_menu?error=gagal menambah menu'));
 		}else{
