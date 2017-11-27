@@ -397,10 +397,10 @@ class Admin extends CI_Controller {
         		."</form>";
 	}
 	public function update_menu(){
-		$kd_menu=$this->input->post('kd_menu');
-		$nama_menu=$this->input->post('nama_menu');
-		$harga_menu=$this->input->post('harga_menu');
-		$keterangan=$this->input->post('ket_menu');
+		$kd_menu=$this->input->post('kd_menu', true);
+		$nama_menu=$this->input->post('nama_menu', true);
+		$harga_menu=$this->input->post('harga_menu', true);
+		$keterangan=$this->input->post('ket_menu', true);
 		if (!empty($kd_menu)) {
 			if (!empty($nama_menu))
 				$data['nama']=$nama_menu;
