@@ -32,7 +32,7 @@ class User extends CI_Controller {
 		//load data menu
 		$data['menu']=$this->data->get_menu(12,0);
 		//first paging
-		$data['count']=10;
+		$data['count']=12;
 		$this->load->view('user_vw/meta');
 		$this->load->view('user_vw/js');
 		$kirim['itemcart']=$this->cart->total_items();
