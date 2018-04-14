@@ -294,7 +294,7 @@ class Admin extends CI_Controller {
 		$this->load->view('admin_vw/sidebar_admin',$data);
 		$this->load->view('admin_vw/menu_admin');
 		$this->load->view('admin_vw/tambah_menu_admin');
-		$this->load->view('admin_vw/jscon_admin');
+		$this->load->view('admin_vw/jscon_admin'); 
 	}
 	public function tambah_menu(){
 		$nama_menu =$this->input->post('nama_menu', true);
