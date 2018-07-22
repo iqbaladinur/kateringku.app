@@ -48,9 +48,13 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '127.0.0.1:54483';
+/* $db['default']['hostname'] = '127.0.0.1:54483';
 $db['default']['username'] = 'azure';
 $db['default']['password'] = '6#vWHD_$';
+$db['default']['database'] = 'kateringdb'; */
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
 $db['default']['database'] = 'kateringdb';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
