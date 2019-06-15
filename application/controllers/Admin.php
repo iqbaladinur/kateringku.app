@@ -522,7 +522,7 @@ class Admin extends CI_Controller {
 		$total_rows=$this->admin_data->get_count_data_penjualan();
 		$paging_url=base_url('admin/data_pengguna?');
 		$page=$this->paging($this->input->get('per_page'),$limit,$total_rows,$paging_url);
-		$data['penjualan']=$this->admin_data->get_data_penjualan($limit,$page['page']);
+		$data['penjualan']=$this->admin_data->get_data_penjualan($page['page'], $limit);
 		$data['link']=$page['link'];
 		$data['jml_psn_msk']=$this->admin_data->getcount_pesanan_masuk();
 		$data['jml_knfr_msk']=$this->admin_data->getcount_konfirm();
@@ -564,7 +564,7 @@ class Admin extends CI_Controller {
 		$total_rows=$this->admin_data->get_count_total_search($date);
 		$paging_url=base_url('admin/search_data_penjualan?');
 		$page=$this->paging($this->input->get('per_page'),$limit,$total_rows,$paging_url);
-		$data['penjualan']=$this->admin_data->search_data_penjualan($date,$limit,$page['page']);
+		$data['penjualan']=$this->admin_data->search_data_penjualan($date,$page['page'],$limit);
 		$data['link']=$page['link'];
 		$data['jml_psn_msk']=$this->admin_data->getcount_pesanan_masuk();
 		$data['jml_knfr_msk']=$this->admin_data->getcount_konfirm();

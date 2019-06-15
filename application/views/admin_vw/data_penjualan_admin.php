@@ -37,9 +37,6 @@
             </tr>
         </thead>
         <tbody>
-        <pre>
-        <?php var_dump($penjualan)?>
-        </pre>
         <?php if (empty($penjualan)) { ?>
             <tr>
                 <td colspan="7" class="text-center">
