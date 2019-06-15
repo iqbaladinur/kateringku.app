@@ -312,6 +312,7 @@ class Admin_data extends CI_Model{
       $this->db->from('penjualan');
       $this->db->offset($offset);
       $this->db->limit($limit);
+      $this->db->where('tgl_masukan',$date);
       return $this->db->get()->result();
     }
     function is_aleady_exis($no_pesanan){
