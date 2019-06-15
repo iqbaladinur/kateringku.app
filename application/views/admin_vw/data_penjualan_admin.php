@@ -39,7 +39,7 @@
         <tbody>
         <?php if (empty($penjualan)) { ?>
             <tr>
-                <td colspan="6" class="text-center">
+                <td colspan="7" class="text-center">
                     Tidak ada Penjualan
                 </td>
             </tr>
