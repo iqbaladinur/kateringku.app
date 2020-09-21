@@ -29,19 +29,19 @@ class Order extends CI_Controller {
 		$config['page_query_string']= TRUE;
 		$config['num_links'] = 10;
 		$config['full_tag_open'] = "<ul class='pagination pagination-sm' style='position:relative; top:-25px;'>";
-        $config['full_tag_close'] ="</ul>";
-	    $config['num_tag_open'] = '<li>';
-	    $config['num_tag_close'] = '</li>';
-	    $config['cur_tag_open'] = "<li class='disabled'><li class='active'><a href='#'>";
-	    $config['cur_tag_close'] = "<span class='sr-only'></span></a></li>";
-	    $config['next_tag_open'] = "<li>";
-	    $config['next_tagl_close'] = "</li>";
-	    $config['prev_tag_open'] = "<li>";
-	    $config['prev_tagl_close'] = "</li>";
-	    $config['first_tag_open'] = "<li>";
-	    $config['first_tagl_close'] = "</li>";
-	    $config['last_tag_open'] = "<li>";
-	    $config['last_tagl_close'] = "</li>";
+		$config['full_tag_close'] ="</ul>";
+		$config['num_tag_open'] = '<li>';
+		$config['num_tag_close'] = '</li>';
+		$config['cur_tag_open'] = "<li class='disabled'><li class='active'><a href='#'>";
+		$config['cur_tag_close'] = "<span class='sr-only'></span></a></li>";
+		$config['next_tag_open'] = "<li>";
+		$config['next_tagl_close'] = "</li>";
+		$config['prev_tag_open'] = "<li>";
+		$config['prev_tagl_close'] = "</li>";
+		$config['first_tag_open'] = "<li>";
+		$config['first_tagl_close'] = "</li>";
+		$config['last_tag_open'] = "<li>";
+		$config['last_tagl_close'] = "</li>";
 		$this->pagination->initialize($config);
 		$pesanan['paging']=$this->pagination->create_links();
 		//load data pesanan
@@ -163,7 +163,7 @@ class Order extends CI_Controller {
 		}else{
 			if ($this->data->cek_no_pesanan($no_pesanan)) {
 				$data = array('no_pesanan' => $no_pesanan);
-				$config['allowed_types']        = 'jpg|jpeg|JPG|JPEG';
+				$config['allowed_types']        = 'jpg|jpeg|JPG|JPEG|png';
 		        $config['max_size']             = 2000;
 		        $config['upload_path']          = './asset/bukti-pembayaran';
 		 		$config['file_name']            = $no_pesanan;
@@ -173,7 +173,7 @@ class Order extends CI_Controller {
 	            	$this->data->insert_into($data,'pembayaran');
 	            	header("Location:upload-bukti-pembayaran.html?success=File berhasil diupload, atas nomor pesanan ".$no_pesanan);
 	            }else{
-	            	header("Location:upload-bukti-pembayaran.html?error=Upload error");
+								header("Location:upload-bukti-pembayaran.html?error=Upload error");
 	            }
 			}else{
 				header("Location:upload-bukti-pembayaran.html?error=Nomor pesanan tidak cocok!");

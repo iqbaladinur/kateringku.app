@@ -5,20 +5,20 @@
 	      <button type="button" class="navbar-toggle btn-sm menu-toggle" data-toggle="collapse" data-target="#myNavbar">
 	       	<span class="glyphicon glyphicon-menu-hamburger"></span>
 	      </button>
-	      <a class="navbar-brand" href="home.html">
-	      	 <img class="img-responsive" alt="Brand" src="asset/img/katering.png">
+	      <a class="navbar-brand" href="<?php echo base_url('/home.html') ?>">
+	      	 <img width="100" alt="Brand" src="<?php echo base_url('/asset/img/logo.svg')?>">
 	      </a>
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
-	      	<li class="active"><a id="nav-menu" href="lihat-menu.html">Menu Katering</a></li>
+	      	<li class="active"><a id="nav-menu" href="<?php echo base_url('/lihat-menu.html')?>">Menu Katering</a></li>
 	      	<?php if ($this->session->userdata('login')==true) { ?>
-	        <li><a id="nav-menu" href="lihat-pesanan">Lihat Pesanan</a></li> 
-	        <li><a id="nav-menu" href="upload-bukti-pembayaran.html">Upload Pembayaran</a></li>
+	        <li><a id="nav-menu" href="<?php echo base_url('/lihat-pesanan')?>">Lihat Pesanan</a></li> 
+	        <li><a id="nav-menu" href="<?php echo base_url('/upload-bukti-pembayaran.html')?>">Upload Pembayaran</a></li>
 	        <?php } ?> 
-	        <li><a id="nav-menu" href="panduan.html">Panduan</a></li>
+	        <li><a id="nav-menu" href="<?php echo base_url('/panduan.html')?>">Panduan</a></li>
 	        <li>
-        		<a id="nav-menu" href="lihat-keranjang.html"> 
+        		<a id="nav-menu" href="<?php echo base_url('/lihat-keranjang.html')?>"> 
         			<span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge"><?php echo $itemcart;?></span>
         		</a>
 	        </li>
@@ -26,20 +26,20 @@
 	        	if ($this->session->userdata('login')==true) { ?>
 	        		 <li>
 			        	<div style="padding-left:10px;padding-right:10px" class="navbar-btn">
-			      			<a href="edit_profile.html">
+			      			<a href="<?php echo base_url('/edit_profile.html')?>">
 			      				<img style="border:1px solid #D3D3D3;width:32px;height:32px" class="img-circle" src="<?php echo $this->session->userdata('profile');?>">
 			      			</a>
 			        	</div>
 			        </li>
 	        		<li>
 			        	<div style="padding-left:10px;padding-right:10px" class="navbar-btn">
-			        		<a style="border-radius:20px;padding-left:20px;padding-right:20px;"  class="btn btn-default btn-md" style="color:gray;" href="logout.html"> Logout </a>
+			        		<a style="border-radius:20px;padding-left:20px;padding-right:20px;"  class="btn btn-default btn-md" style="color:gray;" href="<?php echo base_url('/logout.html')?>"> Logout </a>
 			        	</div>
 			        </li>
 	        	<?php }else{ ?>
 	        <li>
 	        	<div style="padding-left:10px;padding-right:10px" class="navbar-btn">
-	        		<a style="border-radius:20px;padding-left:20px;padding-right:20px;"  class="btn btn-default btn-md" style="color:gray;" href="daftar.html"> Daftar </a>
+	        		<a style="border-radius:20px;padding-left:20px;padding-right:20px;"  class="btn btn-default btn-md" style="color:gray;" href="<?php echo base_url('/daftar.html')?>"> Daftar </a>
 	        	</div>
 	        </li>
 	        <li>

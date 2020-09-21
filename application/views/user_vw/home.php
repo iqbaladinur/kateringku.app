@@ -20,7 +20,7 @@
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
 	    <div class="item active">
-	      <img class="img-responsive" src="asset/img/pic.jpg" alt="1">
+	      <img class="img-responsive caraousel-img" loading="lazy" src="https://images.unsplash.com/photo-1571951735163-9557695592ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="1">
 	      <div class="carousel-caption">
 	        <h3>Mudah</h3>
 	        <p>Lorem ipsum booghore gapsum estrada palakuonium</p>
@@ -28,7 +28,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img class="img-responsive" src="asset/img/pic2.jpg" alt="2">
+	      <img class="img-responsive caraousel-img" loading="lazy" src="https://images.unsplash.com/photo-1572656631137-7935297eff55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="2">
 	      <div class="carousel-caption">
 	        <h3>Senang</h3>
 	        <p>Lorem ipsum booghore gapsum estrada palakuonium</p>
@@ -36,7 +36,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img class="img-responsive" src="asset/img/pic3.png" alt="3">
+	      <img class="img-responsive caraousel-img" loading="lazy" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="3">
 	      <div class="carousel-caption">
 	        <h3>Nikmat</h3>
 	        <p>Lorem ipsum booghore gapsum estrada palakuonium</p>
@@ -44,7 +44,7 @@
 	    </div>
 
 	    <div class="item">
-	      <img class="img-responsive" src="asset/img/pic4.jpg" alt="4"><div class="carousel-caption">
+	      <img class="img-responsive caraousel-img" loading="lazy" src="<?php echo base_url('asset/img/pic4.jpg')?>" alt="4"><div class="carousel-caption">
 	        <h3>Higenis</h3>
 	        <p>Lorem ipsum booghore gapsum estrada palakuonium</p>
 	      </div>
@@ -72,23 +72,23 @@
 		<!--menu contains-->
 		<div class="row">
 		  <div class="menu col-xs-6 col-sm-3">
-		    <a href="paket-pagi.html" class="thumbnail">
-		      <img class="img-responsive" src="asset/menu-paket/pagi.png" alt="pagi">
+		    <a href="paket-pagi.html">
+		      <img class="img-responsive paket" loading="lazy" src="<?php echo base_url('asset/menu-paket/pagi.png')?>" alt="pagi">
 		    </a>
 		  </div>
 		  <div class="menu col-xs-6 col-sm-3">
-		    <a href="paket-siang.html" class="thumbnail">
-		      <img class="img-responsive" src="asset/menu-paket/siang.png" alt="siang">
+		    <a href="paket-siang.html">
+		      <img class="img-responsive paket" loading="lazy" src="<?php echo base_url('asset/menu-paket/siang.png')?>" alt="siang">
 		    </a>
 		  </div>
 		  <div class="menu col-xs-6 col-sm-3">
-		    <a href="paket-malam.html" class="thumbnail">
-		      <img class="img-responsive" src="asset/menu-paket/malam.png" alt="malam">
+		    <a href="paket-malam.html">
+		      <img class="img-responsive paket" loading="lazy" src="<?php echo base_url('asset/menu-paket/malam.png')?>" alt="malam">
 		    </a>
 		  </div>
 		  <div class="menu col-xs-6 col-sm-3">
-		    <a href="paket-ekonomis.html" class="thumbnail">
-		      <img class="img-responsive" src="asset/menu-paket/ekonomis.png" alt="ekonomis">
+		    <a href="paket-ekonomis.html">
+		      <img class="img-responsive paket" loading="lazy" src="<?php echo base_url('asset/menu-paket/ekonomis.png')?>" alt="ekonomis">
 		    </a>
 		  </div>
 		</div>

@@ -26,19 +26,19 @@
 				  <div class="form-group">
 				    <label class="label-left col-sm-offset-1 col-sm-3">Nama Asli</label>
 				    <div class="col-sm-8"> 
-				      <input type="text" id="nama" name="nama" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri{0}->nama;?>">
+				      <input type="text" id="nama" name="nama" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri[0]->nama;?>">
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="label-left col-sm-offset-1 col-sm-3">Alamat Rumah (Pengiriman)</label>
 				    <div class="col-sm-8"> 
-				      <input type="text" id="alamat" name="alamat" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri{0}->alamat;?>">
+				      <input type="text" id="alamat" name="alamat" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri[0]->alamat;?>">
 				    </div>
 				  </div>
 				  <div class="form-group">
 				    <label class="label-left col-sm-offset-1 col-sm-3">Kode POS</label>
 				    <div class="col-sm-8"> 
-				      <input type="text" id="kd_post" name="kd_pos" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri{0}->kd_pos;?>">
+				      <input type="text" id="kd_post" name="kd_pos" class="form-control" value="<?php if(isset($datadiri)) echo $datadiri[0]->kd_pos;?>">
 				    </div>
 				  </div>
 				  <div class="form-group"> 

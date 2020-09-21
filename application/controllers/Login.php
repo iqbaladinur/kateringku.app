@@ -41,9 +41,9 @@ class Login extends CI_Controller {
 				$this->load->view('admin_vw/login_admin',$data);
 			}else{
 				$user = array('login'	=> true,
-							  'no'		=> $login{0}->no,
-							  'id_user' => $login{0}->id_user,
-							  'level'	=> $login{0}->level,
+							  'no'		=> $login[0]->no,
+							  'id_user' => $login[0]->id_user,
+							  'level'	=> $login[0]->level,
 				);
 				$this->session->set_userdata($user);
 				header("Location:".base_url('admin'));

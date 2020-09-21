@@ -109,7 +109,7 @@ class Data extends CI_Model{
     	$this->db->from('tpesanan');
     	$this->db->where('id_user',$id_user);
     	$data=$this->db->get()->result();
-    	return $data{0}->row;
+    	return $data[0]->row;
     }
     function cek_no_pesanan($no_pesanan){
     	$this->db->select('no_pesanan');

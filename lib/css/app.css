@@ -114,9 +114,23 @@ span#headofadmin{
 	background-image: url(../../asset/img/login-bg.jpg);
 	background-size: cover;
 }
-
+.thumbnail{
+	padding: 0px;
+	border:none;
+	border-radius: 1rem;
+	box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
+}
 .thumbnail img{
 	width: 100%;
 	height: 170px;
 	object-fit: cover;
+	border-radius: 1rem 1rem 0px 0px;
+}
+.caraousel-img{
+	width: 100%;
+	height: calc(100vh - 500px) !important;
+	object-fit: cover;
+}
+.paket{
+	border-radius: 2rem;
 }

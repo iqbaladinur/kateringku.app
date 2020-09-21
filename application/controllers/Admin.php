@@ -88,7 +88,7 @@ class Admin extends CI_Controller {
 	/*use by ajax*/
 	public function lihat_detail_pesanan($no){
 		$data=$this->admin_data->getdetail_pesanan($no);
-		$pengambilan=($data{0}->metode_pengambilan==0)?'Ambil Sendiri':'Antar';
+		$pengambilan=($data[0]->metode_pengambilan==0)?'Ambil Sendiri':'Antar';
 		$no_pesanan=$no;
 		$id_user=$this->input->get("id_user");
 		$user=$this->admin_data->get_nama_user($id_user);
@@ -335,7 +335,7 @@ class Admin extends CI_Controller {
 	/*use by ajax*/
 	public function lihat_detail_menu($kd_menu){
 		$data=$this->admin_data->get_detail_menu($kd_menu);
-		echo "<img style='max-height:20%;max-width:20%' src='".base_url($data{0}->pic)."'></img><br><br>";
+		echo "<img style='max-height:20%;max-width:20%' src='".base_url($data[0]->pic)."'></img><br><br>";
 		echo "<table class='table table-stripped table-hover'>"
                 ."<tr>"
                 	."<td>"
@@ -350,7 +350,7 @@ class Admin extends CI_Controller {
                 		."Nama Menu"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->nama
+                		.$data[0]->nama
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -358,7 +358,7 @@ class Admin extends CI_Controller {
                 		."Keterangan Menu"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->keterangan
+                		.$data[0]->keterangan
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -366,7 +366,7 @@ class Admin extends CI_Controller {
                 		."Harga"
                 	."</td>"
                 	."<td class=''>"
-                		."Rp. ".number_format($data{0}->harga, 0, '','.').',-'
+                		."Rp. ".number_format($data[0]->harga, 0, '','.').',-'
                 	."</td>"
                 ."</tr>"             
                ."</table>";
@@ -377,16 +377,16 @@ class Admin extends CI_Controller {
 		echo "<form action='".base_url('admin/update_menu')."' enctype='multipart/form-data' method='POST'>"
 	        	."<div class='form-group'>"
 	        		."<label>Nama Menu</label>"
-	        		."<input name='kd_menu' value='".$data{0}->kd_menu."' class='hidden'>"
-	        		."<input value='".$data{0}->nama."'type='text' name='nama_menu' class='form-control input-sm' required>"
+	        		."<input name='kd_menu' value='".$data[0]->kd_menu."' class='hidden'>"
+	        		."<input value='".$data[0]->nama."'type='text' name='nama_menu' class='form-control input-sm' required>"
 	        	."</div>"
 	        	."<div class='form-group'>"
 	        		."<label>Harga</label>"
-	        		."<input value='".$data{0}->harga."' type='number' name='harga_menu' class='form-control input-sm' required>"
+	        		."<input value='".$data[0]->harga."' type='number' name='harga_menu' class='form-control input-sm' required>"
 	        	."</div>"
 	        	."<div class='form-group'>"
 	        		."<label>Keterangan Menu (<=100 karakter)</label>"
-	        		."<textarea name='ket_menu' class='form-control input-sm' required>".$data{0}->keterangan."</textarea>"
+	        		."<textarea name='ket_menu' class='form-control input-sm' required>".$data[0]->keterangan."</textarea>"
 	        	."</div>"
 	        	."<div class='form-group'>"
 	        		."<label>Picture</label>"
@@ -455,14 +455,14 @@ class Admin extends CI_Controller {
 	}
 	public function lihat_detail_pengguna($id_user){
 		$data=$this->admin_data->getdetail_data_pengguna($id_user);
-		echo "<img style='max-height:20%;max-width:20%' src='".base_url($data{0}->profile)."'></img><br><br>";
+		echo "<img style='max-height:20%;max-width:20%' src='".base_url($data[0]->profile)."'></img><br><br>";
 		echo "<table class='table table-stripped table-hover'>"
                 ."<tr>"
                 	."<td>"
                 		."User Id"
                 	."</td>"
                 	."<td>"
-                		.$data{0}->id_user
+                		.$data[0]->id_user
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -470,7 +470,7 @@ class Admin extends CI_Controller {
                 		."Email"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->email
+                		.$data[0]->email
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -478,7 +478,7 @@ class Admin extends CI_Controller {
                 		."Nama"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->nama
+                		.$data[0]->nama
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -486,7 +486,7 @@ class Admin extends CI_Controller {
                 		."Level"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->level
+                		.$data[0]->level
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -494,7 +494,7 @@ class Admin extends CI_Controller {
                 		."Alamat"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->alamat
+                		.$data[0]->alamat
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -502,7 +502,7 @@ class Admin extends CI_Controller {
                 		."Kode Pos"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->kd_pos
+                		.$data[0]->kd_pos
                 	."</td>"
                 ."</tr>"
                 ."<tr>"
@@ -510,7 +510,7 @@ class Admin extends CI_Controller {
                 		."No Telpon"
                 	."</td>"
                 	."<td class='text-left'>"
-                		.$data{0}->no_telp
+                		.$data[0]->no_telp
                 	."</td>"
                 ."</tr>"        
                ."</table>";
