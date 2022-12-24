@@ -1,3 +1,5 @@
+this project is unmaintained,i forgot what version of the php and mysql is used, please find by yourself, 
+
 <h3>Installation</h3>
 <ol>
 	<li>
@@ -17,4 +19,4 @@
 	</li>
 <ol>
 <br>
-#if you have question or want the full version contact on WA (+6281226241893) or email to: iqbaladinur@gmail.com
+
